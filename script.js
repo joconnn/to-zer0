@@ -47,7 +47,7 @@ function renderGoals() {
 
     li.innerHTML = `
       <h3>${goal.title}</h3>
-      <p>Remaining: <strong>${goal.duration}</strong> hour(s)</p>
+      <p>Remaining: <strong>${goal.duration}</strong> minute(s)</p>
 
       <form class="deduct-form" data-id="${goal.id}">
         <input
