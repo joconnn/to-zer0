@@ -10,3 +10,80 @@
     font: inherit;
   }
 }
+
+@layer components {
+  .retro-header-versus {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    overflow: hidden;
+    background: #18181b;
+    color: white;
+  }
+
+  .retro-copy {
+    padding: 11px 16px;
+  }
+
+  .retro-kicker {
+    margin: 0;
+    color: #93c5fd;
+    font-size: 10px;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 0.14em;
+  }
+
+  .retro-title {
+    margin: 2px 0 0;
+    font-size: 19px;
+    font-style: italic;
+    font-weight: 950;
+    line-height: 1.2;
+    text-transform: uppercase;
+    transform: skew(-4deg);
+  }
+
+  .retro-vs {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background: #2563eb;
+    color: white;
+    clip-path: polygon(18px 0, 100% 0, 100% 100%, 0 100%);
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 950;
+  }
+
+  .label-score {
+    display: grid;
+    gap: 16px;
+    padding: 16px;
+  }
+
+
+  .label-score .field-label {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 5px;
+    padding-bottom: 3px;
+    color: #18181b;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 950;
+    text-transform: uppercase;
+  }
+
+  .label-score .field-note {
+    color: #71717a;
+    font-size: 10px;
+    font-style: normal;
+  }
+
+  @media (min-width: 640px) {
+    .label-score {
+      grid-template-columns: 1fr 12rem;
+    }
+  }
+}
