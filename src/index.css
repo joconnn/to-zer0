@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply m-0 min-w-80 bg-zinc-100 font-sans text-zinc-900 antialiased;
+  }
+
+  button,
+  input {
+    font: inherit;
+  }
+}
