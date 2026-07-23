@@ -1,9 +1,9 @@
 import { type FormEvent } from "react";
 
 const inputClasses =
-  "w-full rounded-md border border-zinc-300 bg-white px-3 py-2 outline-none transition focus:border-zinc-900";
+  "w-full border-2 border-violet-400 bg-[#0b0714] px-3 py-2 text-white outline-none transition placeholder:text-violet-200 focus:border-yellow-300";
 const buttonClasses =
-  "cursor-pointer rounded-md px-4 py-2 font-medium transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600";
+  "pixel-font cursor-pointer px-4 py-3 text-[8px] transition active:translate-y-px motion-reduce:transition-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-300";
 
 type GoalFormProps = {
   onAdd: (title: string, duration: number) => void;
@@ -26,7 +26,7 @@ export function GoalForm({ onAdd }: GoalFormProps) {
 
   return (
     <form
-      className="mb-8 overflow-hidden rounded-lg border-2 border-zinc-900 bg-white"
+      className="mb-8 overflow-hidden border-2 border-fuchsia-400 bg-[#24153f]"
       onSubmit={handleSubmit}
     >
       <div className="retro-header-versus">
@@ -46,10 +46,10 @@ export function GoalForm({ onAdd }: GoalFormProps) {
           <label className="field-label" htmlFor="duration">Starting health</label>
           <div className="relative">
             <input className={`${inputClasses} pr-16 tabular-nums`} id="duration" min="0.1" name="duration" placeholder="60" required step="0.1" type="number" />
-            <span className="pointer-events-none absolute inset-y-0 right-3 flex items-center text-xs font-bold text-zinc-500">MIN</span>
+            <span className="pixel-font pointer-events-none absolute inset-y-0 right-3 flex items-center text-[8px] text-yellow-300">MIN</span>
           </div>
         </div>
-        <button className={`${buttonClasses} bg-blue-600 text-white hover:bg-blue-700 sm:col-span-2`} type="submit">Add fighter</button>
+        <button className={`${buttonClasses} bg-fuchsia-500 text-[#08050e] hover:bg-fuchsia-400 sm:col-span-2`} type="submit">Add fighter</button>
       </div>
     </form>
   );

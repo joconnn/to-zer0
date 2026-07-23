@@ -50,16 +50,19 @@ function App() {
   }
 
   return (
-    <main className="mx-auto my-10 max-w-3xl rounded-lg bg-white p-6 shadow-sm">
-      <h1 className="mb-6 text-3xl font-bold tracking-tight">
-        Beat your study goals into submission
-      </h1>
+    <main className="arcade-shell mx-auto my-6 max-w-3xl overflow-hidden border-2 border-fuchsia-400 bg-[#160d27] p-5 text-white sm:my-10 sm:p-6">
+      <header className="mb-8 border-b-2 border-fuchsia-400 pb-5">
+        <p className="pixel-font mb-3 text-[8px] text-yellow-300">INSERT FOCUS · PRESS START</p>
+        <h1 className="arcade-heading text-3xl font-black uppercase sm:text-4xl">
+          Beat your study goals into submission
+        </h1>
+      </header>
 
       <GoalForm onAdd={addGoal} />
 
-      <h2 className="mb-4 text-2xl font-bold">Goals</h2>
+      <h2 className="pixel-font mb-4 text-sm text-yellow-300">FIGHTER ROSTER</h2>
       {goals.length === 0 ? (
-        <p className="text-zinc-500">No goals yet.</p>
+        <p className="border border-dashed border-fuchsia-400/60 bg-[#0b0714] p-6 text-center text-violet-200">No challengers yet. Choose your first opponent.</p>
       ) : (
         <ul className="grid list-none gap-3 p-0">
           {goals.map((goal) => (

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" shape-rendering="crispEdges">
+  <title id="title">Late-night pixel study dojo</title>
+  <desc id="desc">A quiet rooftop study room overlooking a neon city, rendered in blocky pixel art.</desc>
+
+  <rect width="1280" height="720" fill="#08050e"/>
+  <rect width="1280" height="410" fill="#160d27"/>
+
+  <!-- moon and distant sky -->
+  <rect x="1016" y="72" width="112" height="112" fill="#fde047"/>
+  <rect x="1000" y="88" width="16" height="80" fill="#fde047"/>
+  <rect x="1128" y="96" width="16" height="64" fill="#fde047"/>
+  <rect x="1032" y="56" width="80" height="16" fill="#fde047"/>
+  <rect x="1032" y="184" width="80" height="16" fill="#fde047"/>
+  <rect x="1064" y="104" width="24" height="24" fill="#e8b923"/>
+  <rect x="1104" y="144" width="16" height="16" fill="#e8b923"/>
+  <rect x="864" y="104" width="32" height="8" fill="#a78bfa"/>
+  <rect x="832" y="112" width="96" height="8" fill="#a78bfa"/>
+  <rect x="168" y="88" width="24" height="8" fill="#e83e8c"/>
+  <rect x="136" y="96" width="88" height="8" fill="#e83e8c"/>
+
+  <!-- city skyline -->
+  <rect x="0" y="256" width="112" height="154" fill="#10091d"/>
+  <rect x="32" y="216" width="48" height="40" fill="#10091d"/>
+  <rect x="120" y="288" width="136" height="122" fill="#201238"/>
+  <rect x="168" y="240" width="56" height="48" fill="#201238"/>
+  <rect x="264" y="200" width="96" height="210" fill="#10091d"/>
+  <rect x="288" y="168" width="48" height="32" fill="#10091d"/>
+  <rect x="368" y="264" width="144" height="146" fill="#201238"/>
+  <rect x="520" y="224" width="88" height="186" fill="#10091d"/>
+  <rect x="616" y="296" width="128" height="114" fill="#201238"/>
+  <rect x="752" y="240" width="104" height="170" fill="#10091d"/>
+  <rect x="864" y="280" width="144" height="130" fill="#201238"/>
+  <rect x="1016" y="232" width="104" height="178" fill="#10091d"/>
+  <rect x="1128" y="264" width="152" height="146" fill="#201238"/>
+
+  <!-- city windows -->
+  <g fill="#e83e8c">
+    <rect x="144" y="312" width="16" height="12"/><rect x="192" y="312" width="16" height="12"/>
+    <rect x="288" y="232" width="16" height="12"/><rect x="320" y="264" width="16" height="12"/>
+    <rect x="400" y="296" width="16" height="12"/><rect x="464" y="328" width="16" height="12"/>
+    <rect x="544" y="256" width="16" height="12"/><rect x="784" y="272" width="16" height="12"/>
+    <rect x="896" y="312" width="16" height="12"/><rect x="960" y="344" width="16" height="12"/>
+  </g>
+  <g fill="#fde047">
+    <rect x="48" y="288" width="16" height="12"/><rect x="48" y="336" width="16" height="12"/>
+    <rect x="224" y="352" width="16" height="12"/><rect x="336" y="312" width="16" height="12"/>
+    <rect x="576" y="304" width="16" height="12"/><rect x="648" y="328" width="16" height="12"/>
+    <rect x="704" y="360" width="16" height="12"/><rect x="824" y="336" width="16" height="12"/>
+    <rect x="1048" y="280" width="16" height="12"/><rect x="1080" y="336" width="16" height="12"/>
+    <rect x="1176" y="304" width="16" height="12"/><rect x="1224" y="352" width="16" height="12"/>
+  </g>
+
+  <!-- dojo frame and window -->
+  <rect y="400" width="1280" height="320" fill="#0b0714"/>
+  <rect y="400" width="1280" height="16" fill="#e83e8c"/>
+  <rect x="80" y="416" width="16" height="240" fill="#4c2b70"/>
+  <rect x="1184" y="416" width="16" height="240" fill="#4c2b70"/>
+  <rect x="96" y="416" width="1088" height="16" fill="#4c2b70"/>
+  <rect x="624" y="416" width="16" height="160" fill="#4c2b70"/>
+
+  <!-- floor -->
+  <rect y="576" width="1280" height="144" fill="#160d27"/>
+  <rect y="576" width="1280" height="8" fill="#a78bfa"/>
+  <rect x="0" y="648" width="1280" height="8" fill="#24153f"/>
+  <rect x="312" y="584" width="8" height="136" fill="#24153f"/>
+  <rect x="952" y="584" width="8" height="136" fill="#24153f"/>
+
+  <!-- bookshelf -->
+  <rect x="112" y="448" width="184" height="128" fill="#24153f"/>
+  <rect x="104" y="440" width="200" height="12" fill="#a78bfa"/>
+  <rect x="104" y="504" width="200" height="8" fill="#a78bfa"/>
+  <rect x="120" y="460" width="16" height="44" fill="#e83e8c"/>
+  <rect x="140" y="472" width="20" height="32" fill="#fde047"/>
+  <rect x="164" y="456" width="12" height="48" fill="#8b5cf6"/>
+  <rect x="180" y="468" width="24" height="36" fill="#4ade80"/>
+  <rect x="212" y="460" width="16" height="44" fill="#e83e8c"/>
+  <rect x="236" y="476" width="40" height="28" fill="#fde047"/>
+  <rect x="120" y="524" width="32" height="52" fill="#8b5cf6"/>
+  <rect x="160" y="536" width="16" height="40" fill="#e83e8c"/>
+  <rect x="184" y="520" width="24" height="56" fill="#fde047"/>
+  <rect x="216" y="532" width="56" height="44" fill="#4ade80"/>
+
+  <!-- desk -->
+  <rect x="416" y="528" width="448" height="24" fill="#a78bfa"/>
+  <rect x="448" y="552" width="24" height="104" fill="#4c2b70"/>
+  <rect x="808" y="552" width="24" height="104" fill="#4c2b70"/>
+  <rect x="480" y="496" width="128" height="32" fill="#fde047"/>
+  <rect x="488" y="488" width="112" height="8" fill="#fff4a3"/>
+  <rect x="616" y="512" width="104" height="16" fill="#e83e8c"/>
+  <rect x="632" y="504" width="72" height="8" fill="#f472b6"/>
+
+  <!-- lamp -->
+  <rect x="752" y="456" width="12" height="72" fill="#a78bfa"/>
+  <rect x="728" y="448" width="60" height="12" fill="#a78bfa"/>
+  <rect x="720" y="436" width="76" height="12" fill="#fde047"/>
+  <rect x="740" y="460" width="36" height="8" fill="#fde047" opacity=".55"/>
+
+  <!-- floor cushions -->
+  <rect x="336" y="624" width="112" height="32" fill="#e83e8c"/>
+  <rect x="344" y="616" width="96" height="8" fill="#f472b6"/>
+  <rect x="848" y="624" width="112" height="32" fill="#4c2b70"/>
+  <rect x="856" y="616" width="96" height="8" fill="#8b5cf6"/>
+
+  <!-- foreground silhouettes -->
+  <rect x="0" y="680" width="1280" height="40" fill="#050308"/>
+  <rect x="24" y="640" width="32" height="40" fill="#050308"/>
+  <rect x="1224" y="624" width="32" height="56" fill="#050308"/>
+</svg>

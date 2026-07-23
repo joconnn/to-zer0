@@ -1,8 +1,37 @@
+@import "@fontsource/press-start-2p/latin-400.css";
 @import "tailwindcss";
 
 @layer base {
   body {
-    @apply m-0 min-w-80 bg-zinc-100 font-sans text-zinc-900 antialiased;
+    @apply m-0 min-w-80 bg-[#08050e] font-sans text-white antialiased;
+    min-height: 100vh;
+    background-image:
+      linear-gradient(180deg, transparent 0 70%, rgb(232 62 140 / 0.08) 70% 71%, transparent 71%),
+      linear-gradient(90deg, rgb(139 92 246 / 0.08) 1px, transparent 1px);
+    background-size: 100% 100%, 48px 100%;
+  }
+
+  body::before,
+  body::after {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    content: "";
+  }
+
+  body::before {
+    z-index: 0;
+    background: #08050e url("./assets/study-dojo.svg") center / cover no-repeat;
+  }
+
+  body::after {
+    z-index: 0;
+    background: rgb(8 5 14 / 0.5);
+  }
+
+  #root {
+    position: relative;
+    z-index: 1;
   }
 
   button,
@@ -12,35 +41,50 @@
 }
 
 @layer components {
+  .pixel-font {
+    font-family: "Press Start 2P", ui-monospace, monospace;
+    line-height: 1.6;
+  }
+
+  .arcade-shell {
+    box-shadow: 8px 8px 0 #050308, 12px 12px 0 #e83e8c;
+  }
+
+  .arcade-heading {
+    letter-spacing: -0.025em;
+    text-shadow: 3px 3px 0 #e83e8c;
+  }
+
   .retro-header-versus {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
     overflow: hidden;
-    background: #18181b;
+    border-bottom: 2px solid #e83e8c;
+    background: #0b0714;
     color: white;
   }
 
   .retro-copy {
-    padding: 11px 16px;
+    padding: 14px 16px;
   }
 
   .retro-kicker {
     margin: 0;
-    color: #93c5fd;
-    font-size: 10px;
-    font-weight: 900;
-    line-height: 1.2;
-    letter-spacing: 0.14em;
+    color: #fde047;
+    font-family: "Press Start 2P", ui-monospace, monospace;
+    font-size: 8px;
+    line-height: 1.6;
   }
 
   .retro-title {
-    margin: 2px 0 0;
-    font-size: 19px;
+    margin: 4px 0 0;
+    font-size: 20px;
     font-style: italic;
     font-weight: 950;
     line-height: 1.2;
     text-transform: uppercase;
+    text-shadow: 2px 2px 0 #e83e8c;
     transform: skew(-4deg);
   }
 
@@ -48,42 +92,57 @@
     display: flex;
     align-items: center;
     padding: 0 20px;
-    background: #2563eb;
-    color: white;
+    background: #e83e8c;
+    color: #08050e;
     clip-path: polygon(18px 0, 100% 0, 100% 100%, 0 100%);
-    font-size: 24px;
-    font-style: italic;
-    font-weight: 950;
+    font-family: "Press Start 2P", ui-monospace, monospace;
+    font-size: 16px;
+    line-height: 1;
+    text-shadow: 2px 2px 0 #24153f;
   }
 
   .label-score {
     display: grid;
     gap: 16px;
     padding: 16px;
+    background: #24153f;
   }
-
 
   .label-score .field-label {
     display: flex;
     justify-content: space-between;
-    margin: 0 0 5px;
+    margin: 0 0 7px;
     padding-bottom: 3px;
-    color: #18181b;
-    font-size: 12px;
-    font-style: italic;
-    font-weight: 950;
+    color: #fde047;
+    font-family: "Press Start 2P", ui-monospace, monospace;
+    font-size: 8px;
+    line-height: 1.6;
     text-transform: uppercase;
   }
 
   .label-score .field-note {
-    color: #71717a;
-    font-size: 10px;
-    font-style: normal;
+    color: #c4b5fd;
+    font-size: 8px;
   }
 
   @media (min-width: 640px) {
     .label-score {
       grid-template-columns: 1fr 12rem;
+    }
+  }
+
+  @media (max-width: 639px) {
+    .arcade-shell {
+      box-shadow: none;
+    }
+
+    .retro-title {
+      font-size: 16px;
+    }
+
+    .retro-vs {
+      padding-inline: 14px;
+      font-size: 12px;
     }
   }
 }

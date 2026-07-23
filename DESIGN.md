@@ -1,20 +1,19 @@
 ---
 name: Target to Zero
-description: A restrained study tracker where modern utility meets a retro fighter HUD.
+description: A personal study tracker staged as a vivid 1990s fighting-game HUD.
 colors:
-  action-blue: "#2563eb"
-  action-blue-hover: "#1d4ed8"
-  ink: "#18181b"
-  ink-soft: "#71717a"
-  canvas: "#f4f4f5"
-  surface: "#ffffff"
-  border: "#e4e4e7"
-  field-border: "#d4d4d8"
-  complete: "#16a34a"
-  complete-surface: "#f0fdf4"
-  danger: "#991b1b"
-  danger-border: "#fca5a5"
-  danger-surface: "#fef2f2"
+  action-magenta: "#e83e8c"
+  action-magenta-hover: "#f472b6"
+  arcade-black: "#08050e"
+  hud-black: "#0b0714"
+  arena-purple: "#160d27"
+  panel-purple: "#24153f"
+  border-violet: "#a78bfa"
+  readout-violet: "#c4b5fd"
+  signal-yellow: "#fde047"
+  hud-text: "#ffffff"
+  complete: "#4ade80"
+  complete-surface: "#102b22"
 typography:
   display:
     fontFamily: "ui-sans-serif, system-ui, sans-serif"
@@ -29,19 +28,24 @@ typography:
     lineHeight: 1.33
   title:
     fontFamily: "ui-sans-serif, system-ui, sans-serif"
-    fontSize: "1.125rem"
-    fontWeight: 700
-    lineHeight: 1.56
+    fontSize: "1.25rem"
+    fontWeight: 900
+    lineHeight: 1.2
   body:
     fontFamily: "ui-sans-serif, system-ui, sans-serif"
     fontSize: "1rem"
     fontWeight: 400
     lineHeight: 1.5
   label:
-    fontFamily: "ui-sans-serif, system-ui, sans-serif"
-    fontSize: "1rem"
-    fontWeight: 700
-    lineHeight: 1.5
+    fontFamily: "Press Start 2P, ui-monospace, monospace"
+    fontSize: "0.5rem"
+    fontWeight: 400
+    lineHeight: 1.6
+  status:
+    fontFamily: "Press Start 2P, ui-monospace, monospace"
+    fontSize: "0.75rem"
+    fontWeight: 400
+    lineHeight: 1.6
 rounded:
   field: "6px"
   panel: "8px"
@@ -55,27 +59,23 @@ spacing:
   page: "40px"
 components:
   button-primary:
-    backgroundColor: "{colors.action-blue}"
-    textColor: "{colors.surface}"
-    rounded: "{rounded.field}"
-    padding: "8px 16px"
+    backgroundColor: "{colors.action-magenta}"
+    textColor: "{colors.hud-text}"
+    padding: "12px 16px"
   button-primary-hover:
-    backgroundColor: "{colors.action-blue-hover}"
-    textColor: "{colors.surface}"
+    backgroundColor: "{colors.action-magenta-hover}"
+    textColor: "{colors.hud-text}"
   button-dark:
-    backgroundColor: "{colors.ink}"
-    textColor: "{colors.surface}"
-    rounded: "{rounded.field}"
-    padding: "8px 16px"
+    backgroundColor: "{colors.hud-black}"
+    textColor: "{colors.hud-text}"
+    padding: "12px 16px"
   input:
-    backgroundColor: "{colors.surface}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.field}"
+    backgroundColor: "{colors.hud-black}"
+    textColor: "{colors.hud-text}"
     padding: "8px 12px"
   card:
-    backgroundColor: "{colors.surface}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.field}"
+    backgroundColor: "{colors.panel-purple}"
+    textColor: "{colors.hud-text}"
     padding: "16px"
 ---
 
@@ -85,40 +85,40 @@ components:
 
 **Creative North Star: "The Fighter's Study HUD"**
 
-Target to Zero is where a restrained modern productivity interface collides with the visual language of a retro fighting-game HUD. The modern layer keeps study goals readable, calm, and quick to operate; fighter details turn each title into a player identity and each remaining duration into health that can be depleted toward a decisive zero.
+Target to Zero places a legible productivity workflow directly inside the visual language of a 1990s fighting-game HUD. Deep arcade-black and purple stage surfaces, hard magenta edges, yellow status signals, pixel labels, and dramatic fighter lettering turn each title into a player identity and each remaining duration into health that can be depleted toward a decisive zero.
 
-The interface stays disciplined rather than becoming a themed arcade cabinet. Game character should come from information structure, crisp status feedback, compact HUD geometry, and purposeful moments of emphasis—not ornamental noise or imitation artwork.
+The interface is unmistakably arcade-inspired while remaining fast to read and operate. Pixel typography is reserved for short labels, controls, and status signals; longer copy stays in a modern system face. Game character comes from information structure, crisp status feedback, compact HUD geometry, hard-edged depth, and purposeful emphasis—not imitation artwork.
 
 **Key Characteristics:**
-- Restrained modern foundations with concentrated retro-fighter details
-- Flat, crisp on-screen HUD surfaces rather than physical arcade controls
+- Dark arcade-stage foundations with vivid retro-fighter HUD surfaces
+- Flat, crisp on-screen panels with hard offset depth rather than soft modern cards
 - Strong player identity and instantly readable remaining health
 - Keyboard-first interaction with unmistakable focus states
 - Completion presented as a meaningful match-ending state
 
 ## Colors
 
-The incumbent palette uses cool zinc neutrals for the modern foundation, a concentrated blue action color, and semantic green and red reserved for completion and destructive actions.
+The palette uses arcade black and deep purple as its stage, vivid magenta for action and hard edges, signal yellow for compact readouts, violet for secondary information, and green only for completion.
 
 ### Primary
-- **Electric Action Blue:** The single active accent for adding goals and focused fields.
+- **Impact Magenta:** The active accent for adding goals, fighter-HUD edges, and dramatic lettering offsets.
 
 ### Secondary
 - **Victory Green:** Reserved for a goal whose remaining duration reaches zero and for its completed surface.
 - **Critical Red:** Reserved for destructive controls, never routine progress decoration.
 
 ### Neutral
-- **HUD Ink:** Primary copy and dark action surfaces.
-- **Muted Readout:** Empty-state and secondary copy.
-- **Cool Canvas:** The page field behind the application panel.
-- **Clean Surface:** Cards, fields, and the main application panel.
-- **Fine Divider:** Quiet card and field boundaries.
+- **Arcade Black:** The deepest page and input surface.
+- **Arena Purple:** The atmospheric stage behind the application.
+- **Panel Purple:** Goal cards and form interiors.
+- **Readout Violet:** Secondary copy and inactive information.
+- **Signal Yellow:** Pixel labels, exact values, and high-priority status readouts.
 
 ### Named Rules
 
-**The Signal Discipline Rule.** Blue means action, green means completion, and red means destruction; do not blur these roles.
+**The Signal Discipline Rule.** Magenta means action, yellow means status, and green means completion; do not blur these roles.
 
-**The Restrained Collision Rule.** Neutral surfaces dominate. Fighter-game color appears in compact, high-information HUD moments rather than washing over the entire screen.
+**The Arcade Stage Rule.** No white or neutral page panels. Every major surface belongs to the deep black-and-purple arena, with vivid colors concentrated in high-information HUD moments.
 
 ## Typography
 
@@ -147,33 +147,33 @@ HUD details should reinforce the existing hierarchy rather than create a second 
 
 ## Elevation & Depth
 
-The system is nearly flat. The main application surface uses one subtle ambient shadow to separate it from the cool canvas; cards rely on fine borders and semantic surface color rather than elevation. Fighter HUD depth should come from crisp layered bands and contrast, not soft stacks of floating panels.
+The system is flat and hard-edged. The main application shell uses a two-step black-and-magenta offset shadow against the arena; cards rely on vivid borders and semantic surface color rather than elevation. Fighter HUD depth comes from crisp layered bands and hard offsets, not soft floating panels.
 
 **The Flat HUD Rule.** Keep goal cards visually attached to the interface; reserve shadow for the application shell, not every component.
 
 ## Shapes
 
-The incumbent geometry uses gently curved fields and cards (6px) inside a slightly broader application panel (8px). Borders are thin and quiet. Retro HUD treatment may introduce clipped or stepped internal health-bar geometry, but interactive hit areas retain approachable modern sizing and clearly visible focus outlines.
+The arcade geometry is square and hard-edged. Panels, fields, and buttons use crisp corners and 2px borders; clipped VS panels and offset shadows provide the signature silhouette. Interactive hit areas retain approachable sizing and clearly visible focus outlines.
 
 ## Components
 
 ### Buttons
-- **Shape:** Gently curved rectangle (6px) with compact 8px by 16px padding.
-- **Primary:** Electric Action Blue with white text for creating a goal.
-- **Dark:** HUD Ink with white text for deducting completed minutes.
-- **Hover / Focus:** Darken the surface on hover; show a 2px blue outline with a 2px offset for keyboard focus.
+- **Shape:** Hard-edged rectangle with 12px by 16px padding.
+- **Primary:** Impact Magenta with Arcade Black text for creating a goal and deducting health.
+- **Dark:** HUD Black with white text for secondary actions.
+- **Hover / Focus:** Brighten the surface on hover; show a 2px Signal Yellow outline with a 2px offset for keyboard focus.
 - **Destructive:** Pale red surface, red border, and dark red text; spans the card width in the current layout.
 
 ### Cards / Containers
-- **Corner Style:** Gently curved (6px).
-- **Background:** Clean Surface by default and pale victory green at zero.
+- **Corner Style:** Square and hard-edged.
+- **Background:** Panel Purple by default and deep victory green at zero.
 - **Shadow Strategy:** No card shadow.
 - **Border:** Fine Divider by default; Victory Green on completion.
 - **Internal Padding:** 16px.
 
 ### Inputs / Fields
-- **Style:** White field, Fine Field Border, gently curved corners, and 8px by 12px padding.
-- **Focus:** Blue border shift with a pale blue 2px focus ring.
+- **Style:** Arcade Black field, violet border, crisp corners, and 8px by 12px padding.
+- **Focus:** Signal Yellow border shift without a soft focus glow.
 - **Error / Disabled:** No established visual treatment yet.
 
 ### Goal Health HUD
@@ -185,7 +185,7 @@ The incumbent geometry uses gently curved fields and cards (6px) inside a slight
 ## Do's and Don'ts
 
 ### Do:
-- **Do** keep the modern zinc-and-white foundation dominant.
+- **Do** keep the deep black-and-purple arcade stage dominant.
 - **Do** make player name, remaining minutes, and health state legible at a glance.
 - **Do** use fighter-HUD details where they communicate progress or completion.
 - **Do** preserve clear, visible keyboard focus on every control.
